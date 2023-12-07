@@ -1,11 +1,11 @@
 %global _empty_manifest_terminate_build 0
 Name:		python-pygit2
-Version:	1.7.1
+Version:	1.7.2
 Release:	1
 Summary:	Python bindings for libgit2.
-License:	GPLv2 with linking exception
+License:	GNU General Public License v2.0 only
 URL:		https://github.com/libgit2/pygit2
-Source0:	https://mirrors.nju.edu.cn/pypi/web/packages/7b/c9/677c7a11fff6056593eca53ffeda058bf9fa57996a82626d2f9e1960a7e8/pygit2-1.7.1.tar.gz
+Source0:	https://files.pythonhosted.org/packages/e8/78/15417f51306f6870de37517c5315c1282d001dbc537fe1eb2df40f99a97b/pygit2-1.7.2.tar.gz
 
 
 %description
@@ -46,7 +46,7 @@ Provides:	python3-pygit2-doc
 - Authors - https://github.com/libgit2/pygit2/blob/master/AUTHORS.rst
 
 %prep
-%autosetup -n pygit2-1.7.1
+%autosetup -n pygit2-1.7.2
 
 %build
 %py3_build
@@ -86,5 +86,7 @@ mv %{buildroot}/doclist.lst .
 %{_docdir}/*
 
 %changelog
+* Thu Dec 7 2023 lichaoran <pkwarcraft@hotmail.com> - 1.7.2-1
+- Upgrade to 1.7.2
 * Mon Mar 27 2023 Python_Bot <Python_Bot@openeuler.org> - 1.7.1-1
 - Package Spec generated
